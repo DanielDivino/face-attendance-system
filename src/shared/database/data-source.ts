@@ -2,10 +2,7 @@ import "reflect-metadata";
 import { DataSource } from "typeorm";
 import dotenv from "dotenv";
 
-
-
 dotenv.config();
-
 
 export const AppDataSource = new DataSource({
   type: "postgres",
@@ -15,8 +12,11 @@ export const AppDataSource = new DataSource({
   password: process.env.DB_PASS,
   database: process.env.DB_NAME,
 
-  entities: [],
-  migrations: ["src/migrations/*.ts"],
+  entities: ["src/shared/database/entities/**/*.ts"],
+  migrations: ["src/shared/database/migrations/**/*.ts"],
+
   synchronize: false,
   logging: false,
 });
+
+
