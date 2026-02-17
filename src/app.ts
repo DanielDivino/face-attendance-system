@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import { studentRoutes } from "./modules/students/student.routes";
 import { classGroupRoutes } from "./modules/class-groups/class-groups.routes";
 import { errorHandler } from "./shared/http/error-handler";
+import { enrollmentsRoutes } from "./modules/enrollments/enrollments.routes";
 
 dotenv.config();
 
@@ -18,6 +19,7 @@ app.get("/", (_req, res) => {
 // Rotas
 app.use("/students", studentRoutes);
 app.use("/class-groups", classGroupRoutes);
+app.use("/enrollments", enrollmentsRoutes);
 
 
 // Middleware de erro (sempre por último)
