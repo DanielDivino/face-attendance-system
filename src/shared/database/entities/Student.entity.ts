@@ -8,7 +8,7 @@ import {
 } from "typeorm";
 import { Attendance } from "./Attendance.entity";
 import { Enrollment } from "./Enrollment.entity";
-import { FacialBiometric } from "./Facial-biometric.entity";
+import { FacialBiometric } from "./FacialBiometric.entity";
 
 @Entity("students")
 export class Student {

@@ -7,7 +7,7 @@ import {
   JoinColumn,
   Index,
 } from "typeorm";
-import { Student } from "../entities/Student.entity";
+import { Student } from "./Student.entity";
 
 @Entity("facial_biometrics")
 @Index(["alunoId"])

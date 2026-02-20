@@ -10,7 +10,7 @@ import { studentService } from "../students/student.service";
 import { classGroupService } from "../class-groups/class-groups.service";
 
 import { AppDataSource } from "../../shared/database/data-source";
-import { FacialBiometric } from "../../shared/database/entities/Facial-biometric.entity";
+import { FacialBiometric } from "../../shared/database/entities/FacialBiometric.entity";
 import { Enrollment } from "../../shared/database/entities/Enrollment.entity";
 
 import { EnrollmentStatus } from "../../shared/database/enums/EnrollmentStatus.enum"; // ajuste o caminho se necessário
